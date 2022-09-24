@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avaliar Resort</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Avaliar</title>
+    <script src="/js/avaliar.js" defer></script>
 </head>
 <body>
+    <main>
+        <h1>Avaliar</h1>
+        <section class="container">
+            <form >
+                <section>
+                    <label for="nome">Digite seu nome:</label>
+                    <input type="text" name="nome" id="nome">
+                    <h2>Se deseja que seu comentário seja anônimo, deixe esse campo vazio</h2>
+                </section>
+                <section>
+                    <label for="comentario">Escreva seu comentário:</label>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                    <h2>Nos conte como foi sua experiência durante esse período :D</h2>
+                </section>
+                <section>
+                    <p>Em uma escala de 1 a 5 o quanto você classifica nossos serviços?</p>
+                    <select name="" id="avaliacao">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+                <button type="submit" id="bt_avaliar">Avaliar</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
