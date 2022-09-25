@@ -13,6 +13,7 @@ botaoAvaliar.addEventListener('click', (event) =>
     {
         window.alert("Seu comentário deve conter no minimo 10 caracteres");
     }else{
+        botaoAvaliar.disabled = true;
         comentario = comentarioText.value;
         avaliacao = avaliacaoSelect.value;
         body = {nome: nome, comentario: comentario, avaliacao: avaliacao};
@@ -34,6 +35,11 @@ function(body)
             
             body: JSON.stringify(body)
         })
-        .then(response => {console.log(response)})
+        .then(response => {
+        if(response.status == 200)
+        {
+            window.location.replace("/avaliacoes.html");
+        } 
+        })
         .catch(error => {})
 };

@@ -55,3 +55,8 @@ main
     border: none;
     cursor: pointer;
 }
+
+.container button:disabled
+{
+    background-color: #666666;
+}
