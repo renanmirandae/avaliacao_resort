@@ -41,5 +41,8 @@ function(body)
             window.location.replace("/avaliacoes.html");
         } 
         })
-        .catch(error => {})
+        .catch(error => {
+            window.alert("Por algum motivo não foi possível postar seu comentário, por favor tente novamente!");
+            botaoAvaliar.disabled = false;
+        })
 };

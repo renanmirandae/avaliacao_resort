@@ -27,12 +27,22 @@ main
     align-items:center;
 }
 
+section spam
+{
+    font-size: 75px;
+}
 .container section
 {
     width: 480px;
     display:flex;
     flex-direction: column;
     margin-bottom: 10px;
+}
+
+.comentario
+{
+    min-height: 150px;
+    background-color: aqua;
 }
 
 .container h2
